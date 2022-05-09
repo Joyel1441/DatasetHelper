@@ -5,7 +5,7 @@ Python library to download bulk images for your next Machine Learning project
 
 ## Usage:
 ### ImageDownloader
-load ImageDownloader class from DatasetHelper, and then pass keyword(image which you want to download) as the argument
+load ImageDownloader class from DatasetHelper, and then pass keyword (image which you want to download) as the argument
 ```python
 from DatasetHelper import ImageDownloader
 
