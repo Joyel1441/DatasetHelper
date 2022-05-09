@@ -27,5 +27,6 @@ class ImageDownloader:
     def download(self):
         for img in self.image_links[:self.limit]:
             wget.download(img, out=self.output_dir)
+        print('Download Complete')
          
     
