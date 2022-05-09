@@ -5,7 +5,7 @@ import wget
 import os
 
 class ImageDownloader:
-    def __init__(self, keywords, limit=10, output_dir = "./images"):  
+    def __init__(self, keywords, limit=10, output_dir="./images"):  
         self.keywords = keywords
         self.limit = limit
         self.output_dir = output_dir
