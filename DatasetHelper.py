@@ -17,22 +17,23 @@ class BulkImageDownloader:
             print('No images found')
             self.image_found = False
             return
-        per_page = self.limit//tot_len
-        pages = tot_len//per_page
-        if (tot_len > self.limit):
-            per_page = tot_len//200
-            pages = 200
+        pages = 1
+        per_page = 200
+        print(f'found {tot_len} images')
+        print(f"You gave {self.limit} images but only {tot_len} images found")
+        choice = input(f"Do you want to download only {tot_len} images? (y to continue, other char to exit) ")
+        if (choice.lower() == "y"):
+            pass
         else:
-             print(f"You gave {self.limit} images but only {tot_len} images found")
-             choice = input(f"Do you want to download only {tot_len} images? (y to continue, other char to exit) ")
-             if (choice.lower() == "y"):
-                 pass
-             else:
-                 self.image_found = False
-                 return
+            self.image_found = False
+            return
+            
+        if (tot_len > 200):
+            pages = tot_len//200
+            per_page = 200
         
-        for i in range(per_page):
-            response = requests.get(f"https://pixabay.com/api/?key={self.api_key}&q={self.keywords}&image_type=photo&per_page={pages}&page={i+1}")
+        for i in range(pages):
+            response = requests.get(f"https://pixabay.com/api/?key={self.api_key}&q={self.keywords}&image_type=photo&per_page={per_page}&page={i+1}")
             json_resp = response.json()
             for img in json_resp["hits"]:
                 self.image_links.append(img["largeImageURL"])
@@ -50,3 +51,6 @@ class BulkImageDownloader:
                 with open(os.path.join(self.output_dir,img_name+".jpg"), "wb") as f:
                     f.write(resp.content)
             print('Download complete')
+
+         
+    
