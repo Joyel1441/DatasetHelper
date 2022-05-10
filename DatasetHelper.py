@@ -17,6 +17,7 @@ class BulkImageDownloader:
             print('No images found')
             self.image_found = False
             return
+        
         pages = 1
         per_page = 200
         print(f'found {tot_len} images')
