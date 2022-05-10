@@ -29,4 +29,10 @@ img = BulkImageDownloader('plants', output_dir=<OUTPUT_DIRECTORY>)
 img.download()
 ```
 
+> to set the image download limit, do the following
+```python
+img = BulkImageDownloader('plants', limit=200)
+img.download()
+```
+
 > more features will be added to ease your work in handling datasets, help me in doing so by contributing this project
