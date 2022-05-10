@@ -17,7 +17,7 @@ load ImageDownloader class from DatasetHelper, and then pass keyword (image whic
 ```python
 from DatasetHelper import ImageDownloader
 
-img = ImageDownloader('plants')
+img = BulkImageDownloader('plants')
 img.download()
 ```
 
