@@ -1,5 +1,5 @@
 # DatasetHelper
-Python library to download bulk images for your next Machine Learning project
+Python library for dataset collection and manipulation (will be added) for your next Machine Learning project
 
 ## Installation:
 ##### Step 1:
