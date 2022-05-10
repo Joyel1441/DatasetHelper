@@ -18,7 +18,7 @@ from DatasetHelper import BulkImageDownloader
 img = BulkImageDownloader('plants')
 img.download()
 ```
-> This project uses pixabay api, you can change api key by doing the following
+> This project uses pixabay api, you can change api key by passing api key as the argument
 ```python
 img = BulkImageDownloader('plants', api_key=<YOUR_PIXABAY_API_KEY>)
 img.download()
@@ -29,7 +29,7 @@ img = BulkImageDownloader('plants', output_dir=<OUTPUT_DIRECTORY>)
 img.download()
 ```
 
-> To set the image download limit, do the following
+> To set the image download limit, you can pass limit as argument
 ```python
 img = BulkImageDownloader('plants', limit=200)
 img.download()
