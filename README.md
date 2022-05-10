@@ -1,8 +1,6 @@
 # DatasetHelper
 Python library to download bulk images for your next Machine Learning project
 
-> use a VPN if it throws connection error
-
 ## Installation:
 ##### Step 1:
 `git clone https://github.com/Joyel1441/DatasetHelper.git`
@@ -15,9 +13,16 @@ Python library to download bulk images for your next Machine Learning project
 
 load ImageDownloader class from DatasetHelper, and then pass keyword (image which you want to download) as the argument
 ```python
-from DatasetHelper import ImageDownloader
+from DatasetHelper import BulkmageDownloader
 
 img = BulkImageDownloader('plants')
+img.download()
+```
+> this project uses pixabay api, you can change api key by doing the following
+```python
+from DatasetHelper import BulkmageDownloader
+
+img = BulkImageDownloader('plants', api_key=<YOUR_PIXABAY_API_KEY>)
 img.download()
 ```
 
