@@ -29,6 +29,7 @@ class BulkImageDownloader:
             resp = requests.get(img, stream=True)
             with open(os.path.join(self.output_dir,img_name+".jpg"), "wb") as f:
                 f.write(resp.content)
+         print('Download complete')
 
          
     
