@@ -2,7 +2,7 @@ import requests
 import os
 import wget
 
-class ImageDownloader:
+class BulkImageDownloader:
     def __init__(self, keywords, limit=10, output_dir="./images", api_key="27299598-e3c79d76c20f5052cf7ee7429"):  
         self.keywords = keywords
         self.limit = limit
