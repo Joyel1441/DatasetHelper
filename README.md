@@ -35,4 +35,4 @@ img = BulkImageDownloader('plants', limit=200)
 img.download()
 ```
 
-> More features will be added to ease your work in handling datasets, help me in doing so by contributing this project
+> More features will be added to ease your work in handling datasets, you can help by contributing this project
