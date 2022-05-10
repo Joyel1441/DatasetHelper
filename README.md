@@ -5,7 +5,10 @@ Python library for dataset collection and manipulation (will be added) for your 
 ##### Step 1:
 `git clone https://github.com/Joyel1441/DatasetHelper.git`
 ##### Step 2:
+`cd DatasetHelper`
+##### Step 3:
 `pip install -r requirements.txt`
+
 
 ## Usage:
 ### BulkImageDownloader
