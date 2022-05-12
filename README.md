@@ -14,7 +14,7 @@ Python library for dataset collection and manipulation (will be added) for your 
 ### BulkImageDownloader
 > BulkImageDownloader helps you download bulk images related to the keywords provided
 
-Load BulkImageDownloader class from DatasetHelper, and then pass keyword (image which you want to download) as the argument
+Load BulkImageDownloader class from DatasetHelper, and then pass keywords (related to image which you want to download) as the argument
 ```python
 from DatasetHelper import BulkImageDownloader
 
